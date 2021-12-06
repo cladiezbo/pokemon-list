@@ -1,1 +1,1 @@
-export * from './ngrx-transactions';
+export * from './ngrx-pokemon';

@@ -1,5 +1,5 @@
-import { TransactionState } from "./transaction";
+import { PokemonsState } from "./pokemons";
 
 export interface GlobalState {
-  transactions: TransactionState;
+  pokemons: PokemonsState;
 }

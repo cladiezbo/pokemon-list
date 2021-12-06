@@ -12,19 +12,19 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$transactions-bank-project-primary: mat-palette($mat-indigo);
-$transactions-bank-project-accent: mat-palette($mat-pink, A200, A100, A400);
+$pokemons-project-primary: mat-palette($mat-indigo);
+$pokemons-project-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$transactions-bank-project-warn: mat-palette($mat-red);
+$pokemons-project-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$transactions-bank-project-theme: mat-light-theme($transactions-bank-project-primary, $transactions-bank-project-accent, $transactions-bank-project-warn);
+$pokemons-project-theme: mat-light-theme($pokemons-project-primary, $pokemons-project-accent, $pokemons-project-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($transactions-bank-project-theme);
+@include angular-material-theme($pokemons-project-theme);
 
 /* You can add global styles to this file, and also import other style files */
 

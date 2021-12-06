@@ -2,23 +2,23 @@ import { CommonModule } from '@angular/common';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
-import { TransactionsEffects, TransactionsFacade, transactionsReducer } from './+transactions';
+import { PokemonsEffects, PokemonsFacade, pokemonsReducer } from './+pokemons';
 
 
 @NgModule({
   imports: [
     CommonModule,
-    StoreModule.forFeature('transactions', transactionsReducer),
+    StoreModule.forFeature('pokemons', pokemonsReducer),
     EffectsModule.forFeature([
-      TransactionsEffects
+      PokemonsEffects
     ])
   ],
 })
-export class NgrxTransactionsModule {
+export class NgrxPokemonsModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: NgrxTransactionsModule,
-      providers: [ TransactionsFacade ]
+      ngModule: NgrxPokemonsModule,
+      providers: [PokemonsFacade]
     };
   }
 }

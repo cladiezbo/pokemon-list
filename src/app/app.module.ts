@@ -3,17 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TransactionTableComponent } from './modules/transaction-table/transaction-table.component';
+import { PokemonsTableComponent } from './modules/pokemons-table/pokemons-table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
-  MatButtonModule,
-  MatCardModule,
   MatFormFieldModule,
-  MatIconModule,
   MatInputModule,
   MatPaginatorModule,
-  MatSnackBarModule,
   MatTableModule
 } from '@angular/material';
 import { StoreModule } from '@ngrx/store';
@@ -21,7 +17,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { NgrxTransactionsModule } from './core/ngrx/ngrx-transactions';
+import { NgrxPokemonsModule } from './core/ngrx/ngrx-pokemon';
 import { CommonModule } from '@angular/common';
 
 
@@ -36,7 +32,7 @@ if (!environment.production) {
 @NgModule({
   declarations: [
     AppComponent,
-    TransactionTableComponent,
+    PokemonsTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,9 +45,9 @@ if (!environment.production) {
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
-    NgrxTransactionsModule,
+    NgrxPokemonsModule,
     CommonModule,
-    NgrxTransactionsModule.forRoot(),
+    NgrxPokemonsModule.forRoot(),
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     nonProductionModules

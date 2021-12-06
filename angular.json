@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "transactions-bank-project": {
+    "pokemons-project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/transactions-bank-project",
+            "outputPath": "dist/pokemons-project",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "transactions-bank-project:build"
+            "browserTarget": "pokemons-project:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "transactions-bank-project:build:production"
+              "browserTarget": "pokemons-project:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "transactions-bank-project:build"
+            "browserTarget": "pokemons-project:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "transactions-bank-project:serve"
+            "devServerTarget": "pokemons-project:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "transactions-bank-project:serve:production"
+              "devServerTarget": "pokemons-project:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "transactions-bank-project"
+  "defaultProject": "pokemons-project"
 }

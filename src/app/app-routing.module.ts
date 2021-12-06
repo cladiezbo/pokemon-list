@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TransactionTableComponent } from './modules/transaction-table/transaction-table.component';
+import { PokemonsTableComponent } from './modules/pokemons-table/pokemons-table.component';
 
 
 const routes: Routes = [
   {
-    path: 'transactions',
-    component: TransactionTableComponent
+    path: 'pokemons',
+    component: PokemonsTableComponent
   },
   {
     path: '',
-    redirectTo: '/transactions',
+    redirectTo: '/pokemons',
     pathMatch: 'full'
 
   },
   {
     path: '**',
-    redirectTo: '/transactions',
+    redirectTo: '/pokemons',
   }
 ];
 

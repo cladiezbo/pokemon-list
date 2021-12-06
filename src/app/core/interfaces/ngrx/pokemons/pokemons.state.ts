@@ -1,5 +1,6 @@
-export interface TransactionState {
-  pokemonData: PokemonData[];
+export interface PokemonsState {
+  pokemonData: PokemonResponse;
+  searchByName: string;
 }
 
 export interface PokemonResponse {
